@@ -5,7 +5,10 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Compiled and minified JavaScript -->
       <script src="js/materialize.min.js" rel="js"></script>
-        <!--Import materialize.css-->
+        <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <!--my stylesheet-->
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>    
@@ -14,10 +17,9 @@
       
     </head>
     <body>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!--Navbar-->
         <header>
+        <div class="navbar-fixed">
         <nav class="white">
             <div class="nav-wrapper container">
                 <img class="responsive-img" src="assets/logo.jpg" width="65px">
@@ -40,8 +42,12 @@
                 </ul>
             </div>
         </nav>
+        </div>
+        <div id="top">
+        <img class="responsive-img" src="assets/header.jpeg" max-width="100%" height="auto"/>
+        </div>
         </header>
-        <img class="responsive-img" src="assets/header.jpeg" max-width="100%" height="10%"/>
+        <!--Dividers to divide different 'pages' of the website-->
         <div id="htmlcss">
         <div class="divider"></div>
         <div class="section container">
@@ -90,6 +96,7 @@
         </div>
         </div>
         </div>
+        <!--Footer-->
     <footer class="page-footer white">
         <div class="container">
             <div class="row">
